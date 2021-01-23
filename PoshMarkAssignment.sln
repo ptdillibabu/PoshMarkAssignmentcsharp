@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoshMarkAssignment", "PoshMarkAssignment.csproj", "{FADD824D-8172-41C7-B447-15DDD8B98636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostMarkAssignmentTest", "..\PostMarkAssignmentTest\PostMarkAssignmentTest.csproj", "{4B4CB6B4-5325-40BB-A4A8-6424D0432B10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FADD824D-8172-41C7-B447-15DDD8B98636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADD824D-8172-41C7-B447-15DDD8B98636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADD824D-8172-41C7-B447-15DDD8B98636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADD824D-8172-41C7-B447-15DDD8B98636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4CB6B4-5325-40BB-A4A8-6424D0432B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4CB6B4-5325-40BB-A4A8-6424D0432B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4CB6B4-5325-40BB-A4A8-6424D0432B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4CB6B4-5325-40BB-A4A8-6424D0432B10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1597BC05-CD69-4E68-85C9-7527FF0803EE}
+	EndGlobalSection
+EndGlobal

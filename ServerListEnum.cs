@@ -1,7 +1,7 @@
 ﻿
 namespace PoshMarkAssignment
 {
-    enum ServerListEnum
+    public enum ServerListEnum
     {
         large,
         xlarge,

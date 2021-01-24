@@ -8,10 +8,13 @@ namespace PoshMarkAssignment
     class Program
     {
         static ResponseFormationHelper helper = new ResponseFormationHelper();
-        //Collecting input from user
-        
+
+
+        /*Collecting input from user
+         * Calling GetCost method from helper class with user input.
+        */
         static void Main(string[] args)
-        {
+        {                       
             Console.WriteLine("Please enter the number of hours wants to use the servers");
             long hours = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Please enter the minimum number of cpu  needs");
@@ -22,8 +25,8 @@ namespace PoshMarkAssignment
             string serilizedObject = JsonConvert.SerializeObject(response);
             Console.WriteLine(serilizedObject.ToString());
         }
-        //Created public methof for unit testing
-        //Calculate the cost
+        
+        
 
     }
 }

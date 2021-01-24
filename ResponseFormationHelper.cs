@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace PoshMarkAssignment
 {
@@ -13,6 +11,14 @@ namespace PoshMarkAssignment
             this.serverTypes   = new Dictionary<ServerListEnum, int>() { { ServerListEnum.large, 1 }, { ServerListEnum.xlarge, 2 }, { ServerListEnum.x2large, 4 }, { ServerListEnum.x4large, 8 }, { ServerListEnum.x8large, 16 }, { ServerListEnum.x10large, 32 } };
         }
 
+        /// <summary>
+        /// Get_Cost
+        /// </summary>
+        /// <param name="hours"></param>
+        /// <param name="cpuCount"></param>
+        /// <param name="price"></param>
+        /// <returns>List of response object</returns>
+        
         public  List<ResponseObject> Get_cost(long hours, long cpuCount, float price)
         {            
             List<ResponseObject> responseObjects = new List<ResponseObject>();
@@ -25,8 +31,16 @@ namespace PoshMarkAssignment
                 return ServerWithNoHours(cpuCount, price, responseObjects, serverTypes, repositaryData, hours);
 
         }
-
-        public  List<ResponseObject> ServerWithNoPrice(long cpuCount, long hours, List<ResponseObject> responseObjects, Dictionary<ServerListEnum, int> serverTypes, DataRepositary repositaryData)
+        /// <summary>
+        /// ServerWithNoPrice
+        /// </summary>
+        /// <param name="cpuCount"></param>
+        /// <param name="hours"></param>
+        /// <param name="responseObjects"></param>
+        /// <param name="serverTypes"></param>
+        /// <param name="repositaryData"></param>
+        /// <returns>reurn responseobjects</returns>
+        public List<ResponseObject> ServerWithNoPrice(long cpuCount, long hours, List<ResponseObject> responseObjects, Dictionary<ServerListEnum, int> serverTypes, DataRepositary repositaryData)
         {
             Dictionary<string, List<(string, int)>> locServerList = new Dictionary<string, List<(string, int)>>();
             long tempCount = cpuCount;
@@ -143,7 +157,16 @@ namespace PoshMarkAssignment
             }
             return responseObjects;
         }
-
+        /// <summary>
+        /// ServerWithNoHours
+        /// </summary>
+        /// <param name="cpuCount"></param>
+        /// <param name="price"></param>
+        /// <param name="responseObjects"></param>
+        /// <param name="serverTypes"></param>
+        /// <param name="repositaryData"></param>
+        /// <param name="hours"></param>
+        /// <returns>reurn responseobjects</returns>
         public List<ResponseObject> ServerWithNoHours(long cpuCount, float price, List<ResponseObject> responseObjects, Dictionary<ServerListEnum, int> serverTypes, DataRepositary repositaryData, long hours = 1)
         {
             long tempCount = cpuCount;
